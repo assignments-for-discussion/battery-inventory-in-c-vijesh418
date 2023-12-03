@@ -28,6 +28,7 @@ struct CountsBySoH countBatteriesByHealth(const int* presentCapacities, int nBat
         counts.failed++;
       }
     }
+  printf("number of healthy batteries:%d,exchange battery:%d,failed battery:%d\n",counts.healthy,counts.exchange,counts.failed);
   return counts;
 }
 
